@@ -1,7 +1,7 @@
 {
-  "name": "ntp-packet-parser",
-  "version": "0.4.1",
-  "description": "A parser for NTP UDP packets",
+  "name": "ntp-packet-parser-zerob13",
+  "version": "0.4.2",
+  "description": "A parser for NTP UDP packets, modified and supports Node.js 22.",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "yarn prettier:lint && yarn build",
@@ -17,14 +17,14 @@
     "parser",
     "udp"
   ],
-  "author": "Laurens Stötzel",
+  "author": "zerob13 <zerob13@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/buffcode/ntp-packet-parser.git"
+    "url": "git+https://github.com/zerob13/ntp-packet-parser.git"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.0",
-    "@types/node": "^14 || ^16 || ^18 || ^20",
+    "@types/node": "^14 || ^16 || ^18 || ^20 || ^22",
     "mocha": "^10.1.0",
     "prettier": "^3.0.2",
     "ts-mocha": "^10.0.0",
@@ -43,6 +43,6 @@
     "trailingComma": "es5"
   },
   "engines": {
-    "node": "^14 || ^16 || ^18 || ^20"
+    "node": "^14 || ^16 || ^18 || ^20 || ^22"
   }
 }
